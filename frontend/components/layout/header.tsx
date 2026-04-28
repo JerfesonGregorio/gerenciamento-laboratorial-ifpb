@@ -1,5 +1,6 @@
-import { User } from "lucide-react";
-import { Button } from "@/components/ui/button";
+"use client";
+
+import { UserDropdown } from "@/components/layout/user-dropdown";
 
 export function Header() {
   return (
@@ -8,13 +9,7 @@ export function Header() {
         LabSchedule
       </div>
 
-      <Button
-        variant="secondary"
-        size="icon"
-        className="rounded-full bg-white text-[#222e3e] hover:bg-slate-200 h-12 w-12 border-none"
-      >
-        <User className="h-6 w-6" strokeWidth={2} />
-      </Button>
+      <UserDropdown />
     </header>
   );
 }
